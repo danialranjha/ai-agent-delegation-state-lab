@@ -1,0 +1,1178 @@
+{
+  "fixture_count": 15,
+  "kind": "independent_finite_model",
+  "rows": [
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "valid_revert",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": -7,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 0
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 93,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "valid_success",
+      "execution": {
+        "committed_asset_delta": -7,
+        "proposed_asset_delta": -7,
+        "success": true
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 0
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": -7
+        },
+        "success_only": {
+          "inspected": true,
+          "net_delegate_changed": true
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": "nonce_mismatch",
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 1,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "invalid_nonce_twin",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": -7,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": null,
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": []
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": "wrong_chain",
+          "tuple": {
+            "chain_id": 8,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "wrong_chain",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": null,
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": []
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 0,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "chain_zero",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 0
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": "invalid_recovery_assumption",
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": false
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "invalid_recovery",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": null,
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": []
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": true
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": true
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": true
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": true
+          },
+          "index": 0,
+          "reason": "ordinary_code",
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": true
+      },
+      "case": "ordinary_code",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": null,
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": []
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "same_delegate",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": "A",
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": []
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": null,
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "clear_delegate",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": null,
+          "delegate_before": "A",
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": "A",
+              "to": null,
+              "tuple_index": 0
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "B",
+        "nonce": 2,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "B",
+        "nonce": 2,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        },
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "B",
+            "nonce": 2,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "index": 1,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "B",
+            "nonce": 1,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "last_valid_wins",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "B",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 0
+            },
+            {
+              "from": "A",
+              "to": "B",
+              "tuple_index": 1
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        },
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "index": 1,
+          "reason": "nonce_mismatch",
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "B",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "replayed_nonce",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 0
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 1,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": "wrong_chain",
+          "tuple": {
+            "chain_id": 8,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        },
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 1,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "invalid_then_valid",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 1
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 2,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 2,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "B",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 0,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "B",
+            "nonce": 0,
+            "signature_valid": true
+          }
+        },
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 2,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": "B",
+            "nonce": 1,
+            "ordinary_code": false
+          },
+          "index": 1,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 1,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 0,
+        "ordinary_code": false
+      },
+      "case": "net_equal",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": "A",
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": [
+            {
+              "from": "A",
+              "to": "B",
+              "tuple_index": 0
+            },
+            {
+              "from": "B",
+              "to": "A",
+              "tuple_index": 1
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 18446744073709551615,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 18446744073709551615,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 18446744073709551615,
+            "ordinary_code": false
+          },
+          "applied": false,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 18446744073709551615,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": "nonce_limit",
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 18446744073709551615,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 18446744073709551615,
+        "ordinary_code": false
+      },
+      "case": "nonce_at_limit",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": null,
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": false,
+          "ordered_pointer_changes": []
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    },
+    {
+      "after": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 18446744073709551615,
+        "ordinary_code": false
+      },
+      "after_authorizations": {
+        "assets": 100,
+        "delegate": "A",
+        "nonce": 18446744073709551615,
+        "ordinary_code": false
+      },
+      "authorization_trace": [
+        {
+          "after": {
+            "assets": 100,
+            "delegate": "A",
+            "nonce": 18446744073709551615,
+            "ordinary_code": false
+          },
+          "applied": true,
+          "before": {
+            "assets": 100,
+            "delegate": null,
+            "nonce": 18446744073709551614,
+            "ordinary_code": false
+          },
+          "index": 0,
+          "reason": null,
+          "tuple": {
+            "chain_id": 7,
+            "delegate": "A",
+            "nonce": 18446744073709551614,
+            "signature_valid": true
+          }
+        }
+      ],
+      "before": {
+        "assets": 100,
+        "delegate": null,
+        "nonce": 18446744073709551614,
+        "ordinary_code": false
+      },
+      "case": "nonce_before_limit",
+      "execution": {
+        "committed_asset_delta": 0,
+        "proposed_asset_delta": 0,
+        "success": false
+      },
+      "reports": {
+        "authority_always": {
+          "delegate_after": "A",
+          "delegate_before": null,
+          "inspected": true,
+          "net_delegate_changed": true,
+          "ordered_pointer_changes": [
+            {
+              "from": null,
+              "to": "A",
+              "tuple_index": 0
+            }
+          ]
+        },
+        "balance_only": {
+          "asset_delta": 0
+        },
+        "success_only": {
+          "inspected": false,
+          "net_delegate_changed": null
+        }
+      }
+    }
+  ],
+  "schema": 1,
+  "scope": {
+    "assets": "synthetic_counter_excluding_fees",
+    "cryptography": false,
+    "evm": false,
+    "live_model": false,
+    "network": false,
+    "separate_sponsor_assumed": true,
+    "single_authority": true
+  },
+  "source": "https://github.com/ethereum/EIPs/blob/bbc3f95844c37612a2f1b9e7477990bb717ecfa0/EIPS/eip-7702.md#behavior"
+}

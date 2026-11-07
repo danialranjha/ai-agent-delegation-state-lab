@@ -1,0 +1,37 @@
+{
+  "mutations": [
+    {
+      "error_details": [],
+      "errors": 0,
+      "failed_tests": [
+        "test_delegation_survives_revert (test_experiment.ExperimentTests.test_delegation_survives_revert)"
+      ],
+      "failures": 1,
+      "fault": "rollback_authorization_on_failure",
+      "run": 1,
+      "skipped": 0,
+      "target": "test_experiment.ExperimentTests.test_delegation_survives_revert"
+    },
+    {
+      "error_details": [],
+      "errors": 0,
+      "failed_tests": [
+        "test_report_inspects_failed_execution (test_experiment.ExperimentTests.test_report_inspects_failed_execution)"
+      ],
+      "failures": 1,
+      "fault": "skip_inspection_on_failure",
+      "run": 1,
+      "skipped": 0,
+      "target": "test_experiment.ExperimentTests.test_report_inspects_failed_execution"
+    }
+  ],
+  "normal": {
+    "error_details": [],
+    "errors": 0,
+    "failed_tests": [],
+    "failures": 0,
+    "run": 12,
+    "skipped": 0
+  },
+  "python": "3.13.5"
+}
